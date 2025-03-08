@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz dia das mulheres</title>
+</head>
+<body>
+    <div class="bloco-1">
+        <div class="imagem">
+            <img src='imagens/—Pngtree—heart confettin vector png background_5784478.png' alt="">
+        </div>
+        
+        <h1 class="titulo">Oiii meu amor, fiz esse site pra te falar que eu te AMOOOOOOOOOOO</h1>
+        <h2 class="titulo-2">porque te amar?</h2>
+
+        <div class="sla">
+            
+                <ol class="lista">
+                    <li>Esperta🧐</li>
+                    <li>Fofinha🤗</li>
+                    <li>Amorosa💕</li>
+                    <li>Engraçada😁</li>
+                    <li>Linda😍</li>
+                    <li>Atenciosa😙</li>
+                    
+                </ol>
+                <ol class="lista">
+                    <li>Carinhosa🥰</li>
+                    <li>Companheira💑</li>
+                    <li>Divertida😂</li>
+                    <li>Forte😎</li>
+                    <li>Inteligente🤓</li>
+                    <li>Paciente🤗</li>
+                    
+                </ol>
+            
+        </div>
+        <h2 class="titulo-2">entre outras infinitas qualidades🤯🤭🧐</h2>
+        <h2 class="titulo-2">Algumas fotos suas que eu amo💖</h2>
+    </div>
+
+    <div class="conteiner-galeria">
+        <div class="item-galeria w-2 h-2">
+            <img src="imagens/image.png" alt="" class="img-galeria">
+        </div>
+
+        <div class="item-galeria w-3 h-1">
+            <img src="imagens/amor.gif" alt="" class="img-galeria">
+        </div>
+
+        <div class="item-galeria w-2 h-2">
+            <img src="imagens/linda.jpg" alt="" class="img-galeria">
+        </div>
+
+        <div class="item-galeria w-2 h-1">
+            <img src="imagens/vida.gif" alt="" class="img-galeria">
+        </div>
+    </div>
+
+    <div class="carta-container">
+        <div class="carta" onclick="this.classList.toggle('virada')">
+            <div class="carta-frente">
+                <img src="imagens/coracao.png" alt="Coração" class="img-coracao">
+            </div>
+            <div class="carta-verso">
+                <p class="texto-carta"><br><br><br><br><br><br>Meu amor, você é a pessoa mais especial do mundo para mim. Cada momento ao seu lado é mágico e inesquecível. Te amo mais do que palavras podem expressar, você me faz feliz todos os dias da minha vida. É como naquele filme do Adam Sandler, em que ele tem que fazer a namorada dele se apaixonar por ele todos os dias. Eu faria isso por você todos os dias sem pensar duas vezes. Podemos ver que ele é bem sábio com as palavras e ele diz algo que pode resumir 1% do que sinto por você: "Você é a única pessoa para quem eu nunca menti na vida, eu juro por Deus. Eu confio em você mais do que em qualquer um no mundo, você sabe todos os meus segredos, e... eu adoro seu sorriso, seu sorriso é mágico". Ele falou muito mais que isso, só que ele não sou eu. Mas tenha a certeza de que seu sorriso é mágico, ele faz meu dia feliz. Seus olhos são exuberantes, eu me apaixono por eles. Muitas coisas podem ser ditas, mas nada consegue expressar o quanto eu te amo. Feliz dia das mulheres, meu amor!</p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+    .carta-container {
+        perspective: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 3rem;
+    }
+
+    .carta {
+        width: 300px; /* Aumentar a largura da carta */
+        height: 400px; /* Aumentar a altura da carta */
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s;
+    }
+
+    .carta.virada {
+        transform: rotateY(180deg);
+    }
+
+    .carta-frente, .carta-verso {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .carta-frente {
+        background-color: #fff;
+    }
+
+    .carta-verso {
+        background-color: #f8f8f8;
+        transform: rotateY(180deg);
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto; /* Adicionar rolagem vertical */
+    }
+
+    .img-coracao {
+        width: 100px;
+        height: 100px;
+    }
+
+    .texto-carta {
+        font-size: 16px;
+        text-align: center;
+    }
+    </style>
+
+</body>
+</html>
